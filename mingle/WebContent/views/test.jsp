@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mingle</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<form action="test.me">
-		<input type="text" name="test"/>
-	</form>
+	<%@include file="../index.jsp" %>	
+	
+   <h1 align="center" style="color:red;"><%= request.getAttribute("errorMsg") %></h1>
+   
 </body>
 </html>
